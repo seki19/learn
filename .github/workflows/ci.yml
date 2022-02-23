@@ -39,8 +39,8 @@ jobs:
         run: echo "$HOME/.poetry/bin" >> $GITHUB_PATH
 
       # install venv
-      # - name: Install venv
-	    #   run: conda create -n env_name python=${{ matrix.python-version }}
+      - name: Install venv
+        run: conda create -n env_name python=${{ matrix.python-version }}
       # インストールした Poetry を使って必要な Python パッケージをインストールする
 
       - name: Install Dependencies
