@@ -46,5 +46,5 @@ jobs:
         run: poetry install --no-interaction
       # pytest を実行する
       - name: Run Tests
-        run: poetry run pytest test --cov=./slack_api_decorator --cov-report=xml
+        run: poetry run pytest test 
 
